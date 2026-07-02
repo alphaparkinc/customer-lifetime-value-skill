@@ -1,0 +1,47 @@
+{
+  "name": "customer-lifetime-value-skill",
+  "version": "1.0.0",
+  "description": "Calculate, predict, and segment customers by Lifetime Value (CLV) using RFM analysis (Recency, Frequency, Monetary) and probabilistic models. Supports cohort analysis and retention scoring.",
+  "author": "alphaparkinc",
+  "category": "analytics",
+  "tags": [
+    "CLV",
+    "LTV",
+    "RFM",
+    "customer-analytics",
+    "retention",
+    "e-commerce"
+  ],
+  "inputs": {
+    "orders": {
+      "type": "array",
+      "description": "List of order objects with customer_id, amount, and date fields."
+    },
+    "prediction_months": {
+      "type": "integer",
+      "description": "Future months to predict CLV for.",
+      "default": 12
+    },
+    "segment_count": {
+      "type": "integer",
+      "description": "Number of value segments to group customers into.",
+      "default": 4
+    }
+  },
+  "outputs": {
+    "customers": {
+      "type": "array",
+      "description": "Enriched customer records with CLV, RFM scores, and segment labels."
+    },
+    "segments": {
+      "type": "object",
+      "description": "Segment definitions with customer counts and avg CLV."
+    },
+    "top_customers": {
+      "type": "array",
+      "description": "Top 10 highest CLV customers."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
