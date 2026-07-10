@@ -1,8 +1,8 @@
 {
   "name": "customer-lifetime-value-skill",
   "version": "1.0.0",
-  "description": "Calculate historical and project future Customer Lifetime Value (CLV) based on frequency, average order value, and churn rates.",
-  "author": "alphaparkinc",
+  "description": "GenPark AI Agent Skill - Calculate historical and project future Customer Lifetime Value (CLV) based on frequency, average order value, and churn rates.",
+  "author": "genpark",
   "category": "analytics",
   "tags": [
     "clv",
