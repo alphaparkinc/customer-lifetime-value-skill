@@ -1,4 +1,4 @@
-# customer-lifetime-value-skill
+# genpark-customer-lifetime-value-skill
 
 > **GenPark AI Agent Skill** -- CLV / LTV cohort analyzer and CAC boundary advisor.
 
